@@ -5,7 +5,7 @@ run:
 	docker run \
 		--rm \
 		--name echo_server \
-		-p 8080:80 \
+		-p 8080:8080 \
 		-v .:/script \
 		echo_server
 

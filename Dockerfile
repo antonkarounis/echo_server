@@ -4,6 +4,8 @@ RUN apk add --no-cache python3
 
 WORKDIR /script
 
-COPY echo.sh .
+COPY echo.py .
 
-CMD ["/script/echo.sh"]
+EXPOSE 8080
+
+CMD ["/script/echo.py"]
